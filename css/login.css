@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #ffffff;
+    width: 35%;
+    height: 350px; /* aumentei a altura para acomodar melhor o conteúdo */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* sombra mais suave */
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3); /* sombra mais intensa ao passar o mouse */
+}
+
+.container h1 {
+    color: #4b0082; /* cor roxa para o título */
+    font-family: 'Arvo', serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.campo{
+    color: #4b0082;
+    font-family: 'Arvo', serif;
+    font-weight: 600;
+}
+#data {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#data input {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#data input:focus {
+    border-color: #4b0082;
+    background-color: #e6e6ff; /* fundo suave ao focar */
+}
+
+#data input::placeholder {
+    color: #888;
+}
+
+#data input:focus::placeholder {
+    color: #4b0082;
+}
+
+button {
+    text-decoration: none;
+    color: #4b0082; /* cor roxa para o link */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #4b0082;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b0082;
+    cursor: pointer;
+    color: #fff;
+}
