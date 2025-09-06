@@ -13,16 +13,16 @@ const Footer = () => {
         <div className="footer-section contact">
           <h3>Contato</h3>
           <p>Email: vanessaborges1409@gmail.com</p>
-          <p>Tel: (11) 98765-4321</p>
+          <p>Tel: (77) 98476560</p>
           <p>Brumado, BA</p>
         </div>
         <div className="footer-section social">
           <h3>Siga-nos</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100076820583398&_rdr" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/vanessasantos.santos.12177/" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="icon facebook-icon" />
             </a>
-            <a href="https://www.instagram.com/vanessaborges_joias.rommanel/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/vanessaborges280" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="icon instagram-icon" />
             </a>
           </div>
