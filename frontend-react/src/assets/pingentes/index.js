@@ -17,16 +17,9 @@ import pin16 from './pingente-16.jpeg';
 import pin17 from './pingente-17.jpeg';
 import pin18 from './pingente-18.jpeg';
 import pin19 from './pingente-19.jpeg';
-import pin20 from './pingente-20.jpeg';
-import pin21 from './pingente-21.jpeg';
-import pin22 from './pingente-22.jpeg';
-import pin23 from './pingente-23.jpeg';
-import pin24 from './pingente-24.jpeg';
-import pin25 from './pingente-25.jpeg';
 
 // Exporta um array com todas as imagens, usando os novos nomes de variáveis
 export const PINGENTE_IMAGES = [
   pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8, pin9, pin10, pin11, pin12,
-  pin13, pin14, pin15, pin16, pin17, pin18, pin19, pin20, pin21, pin22, pin23,
-  pin24, pin25,
+  pin13, pin14, pin15, pin16, pin17, pin18, pin19
 ];

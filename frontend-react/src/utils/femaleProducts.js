@@ -3,6 +3,7 @@ import { ANEIS_IMAGES } from '../assets/aneis';
 import { BRINCOS } from '../assets/brincos';
 import { PULSEIRAS } from '../assets/pulseiras';
 import { CONJUNTOS } from '../assets/conjuntos';
+import { COLARES } from '../assets/colares';
 
 export const FEMALE_PRODUCTS_DATA = {
   aneis: [
@@ -68,10 +69,14 @@ export const FEMALE_PRODUCTS_DATA = {
     { name: 'Conjunto 4', price: 48.90, category: 'conjuntos', gender: 'feminina', image: CONJUNTOS[3] },
 
   ],
-  correntes: [
-    { name: 'Corrente Elo', price: 99.90, category: 'correntes', gender: 'feminina', image: 'https://via.placeholder.com/200' },
-    { name: 'Corrente Grumet', price: 109.90, category: 'correntes', gender: 'feminina', image: 'https://via.placeholder.com/200' },
-  ],
+  colares: [
+    { name: 'Colar 1', price: 39.90, category: 'colares', gender: 'feminina', image: COLARES[0] },
+    { name: 'Colar 2', price: 42.00, category: 'colares', gender: 'feminina', image: COLARES[1] },
+    { name: 'Colar 3', price: 45.50, category: 'colares', gender: 'feminina', image: COLARES[2] },
+    { name: 'Colar 4', price: 48.90, category: 'colares', gender: 'feminina', image: COLARES[3] },
+    { name: 'Colar 5', price: 45.50, category: 'colares', gender: 'feminina', image: COLARES[4] },
+    { name: 'Colar 6', price: 48.90, category: 'colares', gender: 'feminina', image: COLARES[5] }
+    ],
   pulseiras: [
     { name: 'Pulseira 1', price: 39.90, category: 'pulseiras', gender: 'feminina', image: PULSEIRAS[0] },
     { name: 'Pulseira 2', price: 42.00, category: 'pulseiras', gender: 'feminina', image: PULSEIRAS[1] },
@@ -114,11 +119,5 @@ export const FEMALE_PRODUCTS_DATA = {
     { name: 'Pingente Asas', price: 125.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[16] },
     { name: 'Pingente Chave', price: 130.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[17] },
     { name: 'Pingente Floral', price: 135.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[18] },
-    { name: 'Pingente Geométrico', price: 140.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[19] },
-    { name: 'Pingente Coroa', price: 145.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[20] },
-    { name: 'Pingente Âncora', price: 150.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[21] },
-    { name: 'Pingente Flecha', price: 155.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[22] },
-    { name: 'Pingente Pássaro', price: 160.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[23] },
-    { name: 'Pingente Coração Vazio', price: 165.00, category: 'pingentes', gender: 'feminina', image: PINGENTE_IMAGES[24] },
   ],
 };
