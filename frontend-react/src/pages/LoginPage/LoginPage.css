@@ -2,72 +2,165 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f0f2f5; /* Fundo cinza claro */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0e6fa, #e6f0fa);
+  font-family: Arial, sans-serif;
   padding: 20px;
+  box-sizing: border-box;
 }
 
-.login-card {
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.login-container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  max-width: 900px;
   width: 100%;
-  max-width: 400px;
-  border: 1px solid #e0e0e0;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.logo-text {
-  font-family: 'Georgia', serif;
-  font-size: 2.5rem;
+.welcome-section,
+.login-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #a7b0ff, #ffc0d9);
+  color: #fff;
+  position: relative;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.welcome-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-title {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
   font-weight: bold;
-  color: #4b4b4b; /* Tom de cinza para elegância */
-  margin-bottom: 25px;
+}
+
+.welcome-text {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.login-section {
+  background: linear-gradient(135deg, #c3a4ff, #a4e4ff);
+  color: #333;
+}
+
+.login-section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: bold;
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-group {
+  margin-bottom: 25px; /* Aumentado para dar mais espaço */
+  text-align: left;
 }
 
 .login-label {
-  font-size: 1rem;
+  display: block;
+  font-size: 0.9rem;
   color: #555;
-  font-weight: 500;
-  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .login-input {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #cccccc;
-  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
   font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
 .login-input:focus {
   outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #7a7aff;
+  box-shadow: 0 0 0 3px rgba(122, 122, 255, 0.3);
+  background-color: #fff;
 }
 
 .login-button {
   width: 100%;
-  padding: 14px;
+  padding: 15px;
   border: none;
-  border-radius: 8px;
-  background-color: #007bff; /* Cor primária vibrante */
+  border-radius: 10px;
+  background: linear-gradient(45deg, #7a7aff, #a7b0ff);
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .login-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
+  background: linear-gradient(45deg, #5b5bff, #8a94ff);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.toggle-button-container .separator {
+  width: 2px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5); /* Linha divisória */
+  border-radius: 50%;
+  transform: rotate(90deg); /* Para girar a linha */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 450px;
+  }
+  .welcome-section {
+    padding-bottom: 80px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .login-section {
+    padding-top: 80px;
+  }
+  .toggle-button-container {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
 }
