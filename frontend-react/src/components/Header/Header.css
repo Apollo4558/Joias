@@ -1,0 +1,50 @@
+.header {
+  background-color: var(--card-background); /* Branco do card */
+  border-bottom: 1px solid var(--border-color); /* Linha sutil para separar */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  height: 50px; /* Tamanho da logo */
+  object-fit: cover;
+  /* A propriedade border-radius: 50%; foi removida para a logo ficar quadrada. */
+}
+
+.header-welcome {
+  text-align: right;
+}
+
+.header-welcome h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color); /* Cor de destaque */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-welcome {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
