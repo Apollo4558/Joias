@@ -1,0 +1,27 @@
+.gender-filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.gender-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.gender-button:hover {
+  background-color: #f0f0f0;
+}
+
+.gender-button.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
